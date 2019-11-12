@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue}
+ 
+\urlstyle{same}
+
+
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3.5cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+%% \cofoot{
+%% \addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size%
+
+%% 123 Broadway {\large\textperiodcentered} City {\large\textperiodcentered} Country 12345\\ % Your mailing address
+%% {\Large\Letter} john@smith.com \ {\Large\Telefon} (000) 111-1111 % Your email address and phone number
+%% }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+%{\scshape\fontsize{18}{18} Curriculum Vitae}
+\noindent
+{\addfontfeature{LetterSpace=20.0}\fontsize{18}{18}\selectfont\scshape Curriculum Vitae} 
+
+%\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+
+\section{Personal Data}
+\begin{tabularx}{0.97\linewidth}{>{\raggedright}p{2cm}X}
+Full Name & 	Petra Vidnerov\'a, n\'ee Kudov\'a\\
+Born & 7 May 1977 in Plze\v{n}, Czech Republic\\
+Citizenship 	& Czech Republic\\
+Contact & petra@cs.cas.cz, \href{http://www.cs.cas.cz/petra}{http://www.cs.cas.cz/petra}
+\end{tabularx}
+
+
+
+\section{Research Interests}
+
+Machine learning, supervised learning, kernel methods, regularization networks.
+Deep learning. Hyper-parameter setup, meta-learning.
+
+\noindent
+Genetic algorithms, evolutionary and hybrid approaches.
+
+\noindent
+Combining RBF networks and Deep Networks. 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedright}p{2cm}X}
+  \gray since 2012 & \textbf{scientist},   Institute of Computer science, \\
+  \gray & \hspace{1.6cm} The Czech Academy of Sciences \\
+  & Department of Machine Learning.\\
+  & \\
+  \gray 2007 - 2012 & \textbf{postdoc}, Institute of Computer science, \\
+  \gray & \hspace{1.5cm} The Czech Academy of Sciences \\
+  & Mainly working part time (parental leave).\\
+  &\\
+  \gray 2001 - 2007 & \textbf{PhD student},   Institute of Computer science, \\
+  \gray & \hspace{2.5cm} The Czech Academy of Sciences \\
+  &  One of the key developers of the multi-agent system Bang (system designed for hybrid models of artificial intelligence, written in C/C++). \\
+\end{tabularx}
+
+\vspace{12pt}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+\gray 2001 - 2007 & PhD at Faculty of Mathematics and Physics,\\
+\gray & Charles University, Prague.\\
+ & Topic of PhD thesis: {\em Learning with Regularization Networks.} Supervised by Mgr. Roman Neruda, CSc.\\
+& \\ 
+\gray 2003 & RNDr. in Computer Science, \\
+\gray  & Faculty of Mathematics and Physics,\\
+\gray & Charles University, Prague.\\
+ & \\
+\gray 1995 - 2001 & Mgr. in Computer Science, \\
+\gray  & Faculty of Mathematics and Physics,\\
+\gray & Charles University, Prague.\\
+& Master thesis: {\em  Learning algorithms for RBF networks.} Supervised by Mgr. Roman Neruda, CSc. \\
+& Software project: MAGDON (Data Mining using genetic algorithms).\\
+& During study focused on neural networks and computer graphics. \\
+\end{tabularx}
+
+\vspace{12pt}
+
+
+\section{Visits Abroad}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+  \gray  February 2006 & Machine Learning Summer School. Canberra, Australia. (Volunteering.) \\
+  \\
+\gray April - June 2005,  
+November 2005 	& Two visits at Edinburgh Parallel Computing Center (EPCC), Edinburgh University, United Kingdom. \\
+& As a grantee of HPC-Europa project. Hosted by Prof. Ben Paechter, School of Computing, Napier University, Edinburgh. \\
+\\
+\gray  July 2002 & 	Neural Networks Summer School. Porto, Portugal.\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+  Best Paper Award & conference ITAT, Slovakia, 2017, P. Vidnerov\'a, R. Neruda. Evolution Strategies for Deep Neural Network Models Design. \\ 
+\end{tabularx}
+
+\section{Teaching}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+\gray Courses &   Evolutionary algorithms (practical course), The Faculty of Mathematics and Physics, Charles University,
+2006-2008 \\
+\\
+\gray Students & Rudolf Kadlec, The Faculty of Mathematics and Physics, Charles University \\
+&  supervising Rudolf's diploma thesis: Evolution of intelligent agent behaviour in computer games,
+    2008 \\
+\\
+\gray Commitee Memberships & 
+    committee for PhD thesis defence, the opponent of Ing. Martin \v{S}lap\'ak's thesis,
+    Faculty of Information Technology, Czech Technical University (2018, 2019) \\
+\end{tabularx}
+
+\section{Current Grant Projects}
+ Capabilities and Limitations of Shallow and Deep Networks,
+ Czech Grant Agency, no. 18-23827S, 2018-2020 (team member)
+ \newline
+ National Competence Center - Cybernetics and Artificial Intelligence,
+ Technology Agency of the Czech Republic, no. TN01000024, 2019 - 2020 (team member) 
+
+\section{Selected Publications}
+
+P. Vidnerov\'a, R. Neruda.  {\em Deep Networks with RBF Layers to
+  Prevent Adversarial Examples.}  Artificial Intelligence and Soft
+Computing, Springer (2018), p. 257-266.  Lecture Notes in Artificial
+Intelligence, 10841. ISBN 978-3-319-91252-3. ISSN 0302-9743.
+
+\noindent
+S. Slu\v{s}n\'y, R. Neruda, P. Vidnerov\'a.  {\em Comparison of
+  Behavior-based and Planning Techniques on the Small Robot Maze
+  Exploration Problem.}  Neural Networks. Volume 23, Issue 4 (2010),
+p. 560-567. ISSN 0893-6080.
+
+\noindent
+R. Neruda, P. Kudov\'a.  {\em Learning Methods for Radial Basis
+  Functions Networks.}  Future Generation Computer
+Systems. 21. (2005), p. 1131-1142. ISSN 0167-739X
+
+\section{Software}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+  rbf\_keras & Implementation of an RBF layer for the Keras library. \\
+   & Available at \href{https://github.com/PetraVidnerova/rbf_keras}{https://github.com/PetraVidnerova/rbf\_keras}\\
+\end{tabularx}
+
+
+\section{Community Service}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+\gray  professional & PC member, reviewer \\
+    & member of conference programme committees:
+    AIAI 2016, AIAI 2018-201, EANN 2015-2019, EML GECCO 2016-2019, IJCNN 2017, IJCNN 2019, ICANN 2018, ITAT 2009 \\
+    & reviewing for scientific journals: Neural Processing Letters,
+    IEEE Transactions on Cybernetics, Computing and Informatics, IEEE
+    Transactions on Evolutionary Computations, Neural Networks, Natural
+    Computing, Analytical Letters, IEEE Transactions on Neural Networks
+    and Learning Systems, Computer Science Review, IEEE Sensors Journal \\
+    & reviewer for GA UK \\
+    \\
+%\gray other & \\
+    \gray & taking care of blog of Institute of Computer Science (since 2015)\\
+     & \href{http://zatisi.cs.cas.cz}{http://zatisi.cs.cas.cz} \\
+\\
+\gray free-time & teaching at PyLadies.cz courses, reviewing attendees' homework assignments (since 2018) \\
+& PyLadies are a community of female Python programmers helping women to get familiar with IT. \\
+\end{tabularx}
+
+
+\section{Languages}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
+  Czech &  native \\
+  English & CAE certificate (2006) \\
+  German & elementary \\ 
+\end{tabularx}
+
+\section{Other skills}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2.5cm}X}
+  \gray  Programming Languages &  Python, bash (in past: Pascal, C/C++, MPI, Perl, PHP, SQL, JavaScript),
+   basic knowledge of HTML and CSS\\
+   & familiar with Python libraries: numpy, pandas, matplotlib, scikit-learn, Keras \\
+   & moderate experience with Django framework \\
+   & \href{cert/certificate_intel.pdf}{AI Intel certificate}\\
+\gray  Other & LaTeX, git \\
+\gray   & enthusiastic Linux user \\
+\end{tabularx}
+
+
+\section{Miscellaneous}
+{\small
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2.5cm}X}
+  certificates & First Aid Kids - Basic Life Support. SHOCK Training Center. (2011) \\
+  & {\em Respektovat a b\'yt respektov\'an.} Course of communication
+  skills focused on a parent-child communication. Accredited by M\v{S}MT (Ministry of Education, Youth and Sports). (2013) \\
+  past experience & Leadership of programming hobby courses for secondary school children (Pascal, C). (1996-2001) \\
+\end{tabularx}
+}
+
+\end{document}
