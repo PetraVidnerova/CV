@@ -54,7 +54,7 @@
 \newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
 
 %----------------------------------------------------------------------------------------
-% �FOOTER SECTION
+% ÊFOOTER SECTION
 %----------------------------------------------------------------------------------------
 
 \renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
@@ -73,7 +73,7 @@
 %\begin{center} % Center everything in the document
 
 %----------------------------------------------------------------------------------------
-% �HEADER SECTION
+% ÊHEADER SECTION
 %----------------------------------------------------------------------------------------
 
 %{\scshape\fontsize{18}{18} Curriculum Vitae}
@@ -96,13 +96,13 @@ Contact & petra@cs.cas.cz, \href{http://www.cs.cas.cz/petra}{http://www.cs.cas.c
 \section{Research Interests}
 
 Machine learning, supervised learning, kernel methods, regularization networks.
-Deep learning. Hyper-parameter setup, meta-learning.
+Deep learning. Hyper-parameter setup, meta-learning. Neural architecture search.
 
 \noindent
 Genetic algorithms, evolutionary and hybrid approaches.
 
 \noindent
-Combining RBF networks and Deep Networks. 
+Epidemic modelling.
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -183,21 +183,29 @@ November 2005 	& Two visits at Edinburgh Parallel Computing Center (EPCC), Edinb
 \gray Commitee Memberships & 
     committee for PhD thesis defence, the opponent of Ing. Martin \v{S}lap\'ak's thesis,
     Faculty of Information Technology, Czech Technical University (2018, 2019) \\
+\ & committee for PhD thesis defence, the opponent of RNDr. Viliam Dillinger's thesis,
+    Comenius University in Bratislava, (2019) \\
 \end{tabularx}
 
 \section{Current Grant Projects}
- Capabilities and Limitations of Shallow and Deep Networks,
- Czech Grant Agency, no. 18-23827S, 2018-2020 (team member)
- \newline
+ %% Capabilities and Limitations of Shallow and Deep Networks,
+ %% Czech Grant Agency, no. 18-23827S, 2018-2020 (team member)
  National Competence Center - Cybernetics and Artificial Intelligence,
- Technology Agency of the Czech Republic, no. TN01000024, 2019 - 2020 (team member) 
+ Technology Agency of the Czech Republic, no. TN01000024, 2019 - 2022 (team member) 
+ \newline
+ AppNeCo: Approximate Neurocomputing,
+ Czech Grant Agency, no. 22-02067S, 2022-2024 (team member)
+ %% Město pro lidi, ne pro virus - Technology Agency of the Czech Republic, no. TL04000282, 2020/21 (team member) 
+ \section{Selected Publications}
+ \noindent
+J. Kalina, A. Neoral, P. Vidnerová.
+{\em Effective Automatic Method Selection for Nonlinear Regression Modeling.}
+International Journal of Neural Systems. Roč. 31, č. 10 (2021), paper no. 2150020. ISSN 0129-0657.
 
-\section{Selected Publications}
-
-P. Vidnerov\'a, R. Neruda.  {\em Deep Networks with RBF Layers to
-  Prevent Adversarial Examples.}  Artificial Intelligence and Soft
-Computing, Springer (2018), p. 257-266.  Lecture Notes in Artificial
-Intelligence, 10841. ISBN 978-3-319-91252-3. ISSN 0302-9743.
+\noindent
+P. Vidnerov\'a, R. Neruda.  {\em Vulnerability of classifiers to evolutionary
+  generated adversarial examples.}  Neural Networks. Volume 127, July 2020,
+p. 168-181. ISSN 0893-6080.
 
 \noindent
 S. Slu\v{s}n\'y, R. Neruda, P. Vidnerov\'a.  {\em Comparison of
@@ -213,7 +221,13 @@ Systems. 21. (2005), p. 1131-1142. ISSN 0167-739X
 \section{Software}
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
   rbf\_keras & Implementation of an RBF layer for the Keras library. \\
-   & Available at \href{https://github.com/PetraVidnerova/rbf_keras}{https://github.com/PetraVidnerova/rbf\_keras}\\
+   & Available at
+  \href{https://github.com/PetraVidnerova/rbf_keras}{https://github.com/PetraVidnerova/rbf\_keras}\\
+  & (used, 5 citations)\\
+  \\
+  Model M & Multiagent epidemic model. One of key developers. \\
+  & Available at
+  \href{https://github.com/epicity-cz/model-m}{https://github.com/epicity-cz/model-m} \\
 \end{tabularx}
 
 
@@ -222,27 +236,34 @@ Systems. 21. (2005), p. 1131-1142. ISSN 0167-739X
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
 \gray  professional & PC member, reviewer \\
     & member of conference programme committees:
-    AIAI 2016, AIAI 2018-201, EANN 2015-2019, EML GECCO 2016-2019, IJCNN 2017, IJCNN 2019, ICANN 2018, ITAT 2009 \\
+    AIAI 2016, AIAI 2018-2021, EANN 2015-2021, EML GECCO 2016-2021, IJCNN 2017, IJCNN 2019, ICANN 2018, ITAT 2009 \\
     & reviewing for scientific journals: Neural Processing Letters,
     IEEE Transactions on Cybernetics, Computing and Informatics, IEEE
     Transactions on Evolutionary Computations, Neural Networks, Natural
     Computing, Analytical Letters, IEEE Transactions on Neural Networks
-    and Learning Systems, Computer Science Review, IEEE Sensors Journal \\
+    and Learning Systems, Computer Science Review, IEEE Sensors Journal,
+    Computers \& security \\
     & reviewer for GA UK \\
     \\
 %\gray other & \\
     \gray & taking care of blog of Institute of Computer Science (since 2015)\\
      & \href{http://zatisi.cs.cas.cz}{http://zatisi.cs.cas.cz} \\
-\\
-\gray free-time & teaching at PyLadies.cz courses, reviewing attendees' homework assignments (since 2018) \\
-& PyLadies are a community of female Python programmers helping women to get familiar with IT. \\
+    \\
+     \gray & BISOP, scientific board member (since 2020) \\
+     & \href{http://bisop.cz}{http://bisop.cz} \\
+     \\
+\gray free-time & teaching at PyLadies.cz courses (since 2018) \\
+& PyLadies is a community of female Python programmers helping women to get
+familiar with IT. \\
+\gray & author of machine learning study materials for   
+data analysis course organised by PyLadies \&  PyData community (2020).
 \end{tabularx}
 
 
 \section{Languages}
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2cm}X}
   Czech &  native \\
-  English & CAE certificate (2006) \\
+  English & C1 (CAE certificate, 2006) \\
   German & elementary \\ 
 \end{tabularx}
 
@@ -250,22 +271,23 @@ Systems. 21. (2005), p. 1131-1142. ISSN 0167-739X
 \begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2.5cm}X}
   \gray  Programming Languages &  Python, bash (in past: Pascal, C/C++, MPI, Perl, PHP, SQL, JavaScript),
    basic knowledge of HTML and CSS\\
-   & familiar with Python libraries: numpy, pandas, matplotlib, scikit-learn, Keras \\
+   & familiar with Python libraries: numpy, pandas, matplotlib, seaborn, scikit-learn,
+   Keras, Tensorflow\\
    & moderate experience with Django framework \\
-   & \href{cert/certificate_intel.pdf}{AI Intel certificate}\\
+   & \href{http://www.cs.cas.cz/~petra/cv/cert/certificate_intel.pdf}{AI Intel certificate}\\
 \gray  Other & LaTeX, git \\
 \gray   & enthusiastic Linux user \\
 \end{tabularx}
 
 
-\section{Miscellaneous}
-{\small
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2.5cm}X}
-  certificates & First Aid Kids - Basic Life Support. SHOCK Training Center. (2011) \\
-  & {\em Respektovat a b\'yt respektov\'an.} Course of communication
-  skills focused on a parent-child communication. Accredited by M\v{S}MT (Ministry of Education, Youth and Sports). (2013) \\
-  past experience & Leadership of programming hobby courses for secondary school children (Pascal, C). (1996-2001) \\
-\end{tabularx}
-}
+%% \section{Miscellaneous}
+%% {\small
+%% \begin{tabularx}{0.97\linewidth}{>{\raggedleft}p{2.5cm}X}
+%%   certificates & First Aid Kids - Basic Life Support. SHOCK Training Center. (2011) \\
+%%   & {\em Respektovat a b\'yt respektov\'an.} Course of communication
+%%   skills focused on a parent-child communication. Accredited by M\v{S}MT (Ministry of Education, Youth and Sports). (2013) \\
+%%   past experience & Leadership of programming hobby courses for secondary school children (Pascal, C). (1996-2001) \\
+%% \end{tabularx}
+%% }
 
 \end{document}
