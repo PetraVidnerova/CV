@@ -1,0 +1,91 @@
+\pagebreak
+
+\noindent
+{\addfontfeature{LetterSpace=20.0}\fontsize{18}{18}\selectfont\scshape Description of selected results} 
+
+\section{Learning Algorithms for RBF Networks}
+In the 1990s and early 21st century, the field of machine learning
+was dominated by the so-called kernel methods. Among these, we can
+include the highly popular Radial Basis Function Networks (RBF
+networks).
+
+As part of my doctoral thesis, I delved into these methods. One of the
+primary outcomes [1] was the proposal of several algorithms for
+training RBF networks and an analysis of these algorithms. All methods
+were implemented and experiments were conducted to demonstrate the
+relationship between the training time and the accuracy of the
+results.
+
+\centerline{}
+\noindent
+[1] R. Neruda, P. Kudová. Learning Methods for Radial Basis Functions
+Networks. Future Generation Computer Systems. 21. (2005),
+p. 1131-1142. ISSN 0167-739X
+\href{https://dl.acm.org/doi/10.5555/1088377.1708275}{https://dl.acm.org/doi/10.5555/1088377.1708275}
+
+
+\section{Generating of Adversarial Examples and Their Analysis}
+
+In recent years, the question of the security and reliability of
+artificial intelligence algorithms has gained significant
+attention. This is closely related to the concept of "adversarial"
+patterns, which are intentionally created patterns designed to deceive
+a given classification model. For instance, in image classification,
+an adversarial pattern may appear indistinguishable from the original
+image to the human eye, yet a properly trained model may classify it
+incorrectly.
+
+In our article [2], we have contributed to the understanding
+of adversarial patterns, particularly emphasizing that they are not
+limited to neural networks but apply to a wide range of classifiers,
+from SVMs to decision trees. To address this issue, we have introduced
+our own evolutionary algorithm for adversarial
+patterns crafting. Its notable feature is its "black-box" approach, meaning it
+doesn't require knowledge of the model's internal settings and
+structure. As a result, it can be employed to undermine (in the
+context of adversarial patterns) virtually any classification model.
+
+Furthermore, through our experiments, we have demonstrated that
+certain adversarial patterns can be transferred between models,
+particularly when dealing with models of similar nature (e.g., two
+neural networks with similar architectures).
+
+Additionally, we have shown that networks equipped with local units
+(e.g., RBF networks) exhibit higher resilience against adversarial
+patterns.
+
+\centerline{}
+\noindent
+[2] P. Vidnerová, R. Neruda. Vulnerability of classifiers to
+evolutionary generated adversarial examples, Neural Networks, Volume
+127, 2020.\newline
+\href{https://doi.org/10.1016/j.neunet.2020.04.015}{https://doi.org/10.1016/j.neunet.2020.04.015}
+
+
+\section{Epidemic Modeling - Multi-agent System Model M}
+In 2020, I joined a group of scientists focused on modeling the spread
+of the COVID-19 disease. One of the key outcomes is a multi-agent
+model named Model M [3], along with software [4] that enables
+experimentation with the model.
+
+The model operates with a realistic network graph and allows for
+simulating a wide range of interventions, such as global contact
+restrictions, quarantines, and contact tracing.
+
+The model is designed modularly, allowing for diverse application
+deployments. The model was used in a study on virus transmission in
+schools in collaboration with the Ministry of Education, Youth, and
+Sports of the Czech Republic.
+
+I contributed to the model's design, implementation, and experiments.
+
+\centerline{}
+\noindent
+[3] Berec, et al. On the Contact Tracing for COVID-19: A simulation
+study. Epidemics, Volume 43, (2023), ISSN 1755-4365.
+\href{https://doi.org/10.1016/j.epidem.2023.100677}{https://doi.org/10.1016/j.epidem.2023.100677}
+
+\noindent
+[4] Berec, et al. {\em Epicity}, 2021,
+\href{https://github.com/epicity-cz/model-m/releases/tag/v1.0}{https://github.com/epicity-cz/model-m/releases/tag/v1.0}
+
